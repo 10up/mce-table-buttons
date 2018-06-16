@@ -52,22 +52,13 @@ class MCE_Table_Buttons {
 		global $tinymce_version;
 		$variant = ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ) ? '' : '.min';
 
-		if ( version_compare( $tinymce_version, '400', '<' ) ) {
+		if ( version_compare( $tinymce_version, '4700', '<' ) ) {
 
-			wp_register_style( 'mce-table-buttons', plugin_dir_url( __FILE__ ) . 'tinymce3-assets/mce-table-buttons.css' );
-			wp_print_styles( 'mce-table-buttons' );
-
-			$plugin_dir_url = plugin_dir_url( __FILE__ );
-			$plugin_array['table'] = $plugin_dir_url . 'tinymce3-table/editor_plugin.js';
-			$plugin_array['mcetablebuttons'] = $plugin_dir_url . 'tinymce3-assets/mce-table-buttons.js';
-
-		} elseif ( version_compare( $tinymce_version, '4100', '<' ) ) {
-
-			$plugin_array['table'] = plugin_dir_url( __FILE__ ) . 'tinymce4-table/plugin' . $variant . '.js';
+			$plugin_array['table'] = plugin_dir_url( __FILE__ ) . 'tinymce41-table/plugin' . $variant . '.js';
 
 		} else {
 
-			$plugin_array['table'] = plugin_dir_url( __FILE__ ) . 'tinymce41-table/plugin' . $variant . '.js';
+			$plugin_array['table'] = plugin_dir_url( __FILE__ ) . 'tinymce47-table/plugin' . $variant . '.js';
 
 		}
 
@@ -81,35 +72,14 @@ class MCE_Table_Buttons {
 	 * @return array Buttons for the second row
 	 */
 	public static function mce_buttons_2( $buttons ) {
-		global $tinymce_version;
-
-		if ( version_compare( $tinymce_version, '400', '<' ) ) {
-
-			add_filter( 'mce_buttons_3', array( __CLASS__, 'mce_buttons_3' ) );
-
-		} else {
-
-			// in case someone is manipulating other buttons, drop table controls at the end of the row
-			if ( ! $pos = array_search( 'undo', $buttons ) ) {
-				array_push( $buttons, 'table' );
-				return $buttons;
-			}
-
-			$buttons = array_merge( array_slice( $buttons, 0, $pos ), array( 'table' ), array_slice( $buttons, $pos ) );
-
+		// in case someone is manipulating other buttons, drop table controls at the end of the row
+		if ( ! $pos = array_search( 'undo', $buttons ) ) {
+			array_push( $buttons, 'table' );
+			return $buttons;
 		}
 
-		return $buttons;
-	}
+		$buttons = array_merge( array_slice( $buttons, 0, $pos ), array( 'table' ), array_slice( $buttons, $pos ) );
 
-	/**
-	 * Add TinyMCE 3.x table control to the second row, after other formatting controls
-	 *
-	 * @param array $buttons Buttons for the second row
-	 * @return array Buttons for the second row
-	 */
-	public static function mce_buttons_3( $buttons ) {
-		array_push( $buttons, 'tablecontrols' );
 		return $buttons;
 	}
 
