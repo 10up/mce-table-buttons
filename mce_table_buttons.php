@@ -40,6 +40,7 @@ class MCE_Table_Buttons {
 		add_filter( 'mce_external_plugins', array( __CLASS__, 'mce_external_plugins' ) );
 		add_filter( 'mce_buttons_2', array( __CLASS__, 'mce_buttons_2' ) );
 		add_filter( 'content_save_pre', array( __CLASS__, 'content_save_pre' ), 20 );
+		add_filter( 'tiny_mce_before_init', array( __CLASS__, 'tiny_mce_before_init' ), 10, 2 );
 	}
 
 	/**
@@ -101,6 +102,22 @@ class MCE_Table_Buttons {
 		}
 		
 		return $content;
+	}
+
+	/**
+	 * Remove the table toolbar introduced in TinyMCE 4.3.0.
+	 *
+	 * Its positioning does not work correctly inside WordPress and blocks editing.
+	 *
+	 * @param array  $mceInit   An array with TinyMCE config.
+	 * @param string $editor_id Unique editor identifier, e.g. 'content'.
+	 *
+	 * @return array TinyMCE config array
+	 */
+	public static function tiny_mce_before_init ( $mceInit, $editor_id ) {
+		$mceInit['table_toolbar'] = '';
+
+		return $mceInit;
 	}
 }
 
