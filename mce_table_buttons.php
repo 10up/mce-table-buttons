@@ -1,13 +1,13 @@
 <?php
 /**
- Plugin Name: MCE Table Buttons
- Plugin URI: http://10up.com/plugins-modules/wordpress-mce-table-buttons/
- Description: Add <strong>controls for table editing</strong> to the visual content editor with this <strong>light weight</strong> plug-in.
- Version: 3.2
- Author: Jake Goldman, 10up, Oomph
- Author URI: http://10up.com
- License: GPLv2 or later
-*/
+ * Plugin Name: MCE Table Buttons
+ * Plugin URI: http://10up.com/plugins-modules/wordpress-mce-table-buttons/
+ * Description: Add <strong>controls for table editing</strong> to the visual content editor with this <strong>light weight</strong> plug-in.
+ * Version: 3.3
+ * Author: Jake Goldman, 10up, Oomph
+ * Author URI: http://10up.com
+ * License: GPLv2 or later
+ */
 
 class MCE_Table_Buttons {
 
@@ -40,6 +40,7 @@ class MCE_Table_Buttons {
 		add_filter( 'mce_external_plugins', array( __CLASS__, 'mce_external_plugins' ) );
 		add_filter( 'mce_buttons_2', array( __CLASS__, 'mce_buttons_2' ) );
 		add_filter( 'content_save_pre', array( __CLASS__, 'content_save_pre' ), 20 );
+		add_filter( 'tiny_mce_before_init', array( __CLASS__, 'tiny_mce_before_init' ), 10, 2 );
 	}
 
 	/**
@@ -52,22 +53,13 @@ class MCE_Table_Buttons {
 		global $tinymce_version;
 		$variant = ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ) ? '' : '.min';
 
-		if ( version_compare( $tinymce_version, '400', '<' ) ) {
+		if ( version_compare( $tinymce_version, '4700', '<' ) ) {
 
-			wp_register_style( 'mce-table-buttons', plugin_dir_url( __FILE__ ) . 'tinymce3-assets/mce-table-buttons.css' );
-			wp_print_styles( 'mce-table-buttons' );
-
-			$plugin_dir_url = plugin_dir_url( __FILE__ );
-			$plugin_array['table'] = $plugin_dir_url . 'tinymce3-table/editor_plugin.js';
-			$plugin_array['mcetablebuttons'] = $plugin_dir_url . 'tinymce3-assets/mce-table-buttons.js';
-
-		} elseif ( version_compare( $tinymce_version, '4100', '<' ) ) {
-
-			$plugin_array['table'] = plugin_dir_url( __FILE__ ) . 'tinymce4-table/plugin' . $variant . '.js';
+			$plugin_array['table'] = plugin_dir_url( __FILE__ ) . 'tinymce41-table/plugin' . $variant . '.js';
 
 		} else {
 
-			$plugin_array['table'] = plugin_dir_url( __FILE__ ) . 'tinymce41-table/plugin' . $variant . '.js';
+			$plugin_array['table'] = plugin_dir_url( __FILE__ ) . 'tinymce47-table/plugin' . $variant . '.js';
 
 		}
 
@@ -81,35 +73,14 @@ class MCE_Table_Buttons {
 	 * @return array Buttons for the second row
 	 */
 	public static function mce_buttons_2( $buttons ) {
-		global $tinymce_version;
-
-		if ( version_compare( $tinymce_version, '400', '<' ) ) {
-
-			add_filter( 'mce_buttons_3', array( __CLASS__, 'mce_buttons_3' ) );
-
-		} else {
-
-			// in case someone is manipulating other buttons, drop table controls at the end of the row
-			if ( ! $pos = array_search( 'undo', $buttons ) ) {
-				array_push( $buttons, 'table' );
-				return $buttons;
-			}
-
-			$buttons = array_merge( array_slice( $buttons, 0, $pos ), array( 'table' ), array_slice( $buttons, $pos ) );
-
+		// in case someone is manipulating other buttons, drop table controls at the end of the row
+		if ( ! $pos = array_search( 'undo', $buttons ) ) {
+			array_push( $buttons, 'table' );
+			return $buttons;
 		}
 
-		return $buttons;
-	}
+		$buttons = array_merge( array_slice( $buttons, 0, $pos ), array( 'table' ), array_slice( $buttons, $pos ) );
 
-	/**
-	 * Add TinyMCE 3.x table control to the second row, after other formatting controls
-	 *
-	 * @param array $buttons Buttons for the second row
-	 * @return array Buttons for the second row
-	 */
-	public static function mce_buttons_3( $buttons ) {
-		array_push( $buttons, 'tablecontrols' );
 		return $buttons;
 	}
 
@@ -131,6 +102,22 @@ class MCE_Table_Buttons {
 		}
 		
 		return $content;
+	}
+
+	/**
+	 * Remove the table toolbar introduced in TinyMCE 4.3.0.
+	 *
+	 * Its positioning does not work correctly inside WordPress and blocks editing.
+	 *
+	 * @param array  $mceInit   An array with TinyMCE config.
+	 * @param string $editor_id Unique editor identifier, e.g. 'content'.
+	 *
+	 * @return array TinyMCE config array
+	 */
+	public static function tiny_mce_before_init ( $mceInit, $editor_id ) {
+		$mceInit['table_toolbar'] = '';
+
+		return $mceInit;
 	}
 }
 
