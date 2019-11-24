@@ -27,6 +27,10 @@ Note that the table controls are contained in the “kitchen sink” toolbar, to
 
 **Stable:** 10up is not planning to develop any new features for this, but will still respond to bug reports and security concerns.  We welcome PRs, but any that include new features should be small and easy to integrate and should not include breaking changes. We otherwise intend to keep this tested up to the most recent version of WordPress.
 
+## Changelog
+
+A complete listing of all notable changes to MCE Table Buttons are documented in [CHANGELOG.md](https://github.com/10up/mce-table-buttons/blob/develop/CHANGELOG.md).
+
 ## Like what you see?
 
 <p align="center">
