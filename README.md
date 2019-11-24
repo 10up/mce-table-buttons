@@ -1,8 +1,10 @@
 # MCE Table Buttons for WordPress
 
-![Screenshot of added table buttons](screenshot-1.png)
+> Adds table editing controls to the visual content editor (TinyMCE).
 
-Adds table editing controls to the visual content editor (TinyMCE).
+[![Support Level](https://img.shields.io/badge/support-stable-blue.svg)](#support-level)
+
+![Screenshot of added table buttons](screenshot-1.png)
 
 A light weight plug-in that adds the table editing controls from the full version of TinyMCE, optimized for WordPress. Note that this may not work in conjunction with other plug-ins that significantly alter or replace the visual editor's default behavior.
 
@@ -12,6 +14,12 @@ Note that the table controls are contained in the “kitchen sink” toolbar, to
 * Requires at least WordPress 4.0
 * Tested up to WordPress 4.9.6
 * Includes TinyMCE table plugin versions 4.7.11 and 4.1.?
+
+## Support Level
+
+**Stable:** 10up is not planning to develop any new features for this, but will still respond to bug reports and security concerns.  We welcome PRs, but any that include new features should be small and easy to integrate and should not include breaking changes. We otherwise intend to keep this tested up to the most recent version of WordPress.
+
+## Like what you see?
 
 <p align="center">
 <a href="http://10up.com/contact/"><img src="https://10updotcom-wpengine.s3.amazonaws.com/uploads/2016/10/10up-Github-Banner.png" width="850"></a>
