@@ -2,7 +2,7 @@
 
 > Adds table editing controls to the visual content editor (TinyMCE).
 
-[![Support Level](https://img.shields.io/badge/support-stable-blue.svg)](#support-level)
+[![Support Level](https://img.shields.io/badge/support-stable-blue.svg)](#support-level) [![Release Version](https://img.shields.io/github/release/10up/mce-table-buttons.svg)](https://github.com/10up/mce-table-buttons/releases/latest)
 
 ![Screenshot of added table buttons](screenshot-1.png)
 
