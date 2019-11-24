@@ -31,6 +31,10 @@ Note that the table controls are contained in the “kitchen sink” toolbar, to
 
 A complete listing of all notable changes to MCE Table Buttons are documented in [CHANGELOG.md](https://github.com/10up/mce-table-buttons/blob/develop/CHANGELOG.md).
 
+## Contributing
+
+Please read [CODE_OF_CONDUCT.md](https://github.com/10up/mce-table-buttons/blob/develop/CODE_OF_CONDUCT.md) for details on our code of conduct, [CONTRIBUTING.md](https://github.com/10up/mce-table-buttons/blob/develop/CONTRIBUTING.md) for details on the process for submitting pull requests to us, and [CREDITS.md](https://github.com/10up/mce-table-buttons/blob/develop/CREDITS.md) for a listing of maintainers of, contributors to, and libraries used by MCE Table Buttons.
+
 ## Like what you see?
 
 <p align="center">
