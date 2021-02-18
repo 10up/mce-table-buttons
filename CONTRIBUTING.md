@@ -24,7 +24,7 @@ For more on how 10up writes and manages code, check out our [10up Engineering Be
 
 ## Workflow
 
-The `develop` branch is the development branch which means it contains the next version to be released.  `stable` contains the current latest release and `master` contains the corresponding stable development version.  Always work on the `develop` branch and open up PRs against `develop`.
+The `develop` branch is the development branch which means it contains the next version to be released.  `stable` contains the current latest release and `trunk` contains the corresponding stable development version.  Always work on the `develop` branch and open up PRs against `develop`.
 
 ## Release instructions
 
@@ -33,7 +33,7 @@ The `develop` branch is the development branch which means it contains the next 
 3. Changelog: Add/update the changelog in both `readme.txt` and `CHANGELOG.md`.
 4. New files: Check to be sure any new files/paths that are unnecessary in the production version are included in `.distignore`.
 5. Readme updates: Make any other readme changes as necessary.  `CHANGELOG.md` and `README.md` are geared toward GitHub and `readme.txt` contains WordPress.org-specific content.  The two are slightly different.
-6. Merge: Make a non-fast-forward merge from `develop` to `master` (`git checkout master && git merge --no-ff develop`).
+6. Merge: Make a non-fast-forward merge from `develop` to `trunk` (`git checkout trunk && git merge --no-ff develop`).
 7. Release: Create a [new release](https://github.com/10up/mce-table-buttons/releases/new), naming the tag and the release with the new version number. Paste the changelog from `CHANGELOG.md` into the body of the release and include a link to the closed issues on the milestone (e.g. `https://github.com/10up/mce-table-buttons/milestone/1?closed=1`).  Close the milestone.
 8. SVN: Wait for the [GitHub Action](https://github.com/10up/mce-table-buttons/actions) to finish deploying to the WordPress.org repository.  If all goes well, users with SVN commit access for that plugin will receive an emailed diff of changes.
 9. Check WordPress.org: Ensure that the changes are live on [https://wordpress.org/plugins/mce-table-buttons/](https://wordpress.org/plugins/mce-table-buttons/). This may take a few minutes.
