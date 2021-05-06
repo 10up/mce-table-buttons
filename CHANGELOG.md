@@ -63,7 +63,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 ## [1.0] - 2009-11-06
 - Initial plugin release :tada:
 
-[Unreleased]: https://github.com/10up/mce-table-buttons/compare/master...develop
+[Unreleased]: https://github.com/10up/mce-table-buttons/compare/trunk...develop
 [3.3]: https://github.com/10up/mce-table-buttons/commit/7b1f57e
 [3.2]: https://plugins.trac.wordpress.org/changeset/971857/
 [3.1]: https://plugins.trac.wordpress.org/changeset/924344/
