@@ -1,0 +1,17 @@
+# Directories
+/.git
+/.github
+/.wordpress-org
+/bin
+/node_modules
+/tests
+
+# Files
+.distignore
+.gitignore
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+CREDITS.md
+LICENSE.md
+README.md
