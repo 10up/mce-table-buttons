@@ -17,4 +17,4 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: PHPCS check
-      uses: dinhtungdu/wpcs-action@master
+      uses: 10up/wpcs-action@master
