@@ -10,9 +10,10 @@ A light weight plug-in that adds the table editing controls from the full versio
 
 Note that the table controls are contained in the “kitchen sink” toolbar, toggled with the last button on the first row of controls.
 
-![Screenshot of added table buttons](screenshot-1.png)
+![Screenshot of added table buttons](.wordpress-org/screenshot-1.png)
 
 ## Technical information
+
 * Requires at least WordPress 4.0
 * Includes TinyMCE table plugin versions 4.7.11 and 4.1.?
 
