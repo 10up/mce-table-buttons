@@ -3,6 +3,7 @@
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
 ## [Unreleased] - TBD
+- Issues reported by PHPCS WPCS v2.3.0 addressed
 
 ## [3.3] - 2018-06-15
 ### Changed
