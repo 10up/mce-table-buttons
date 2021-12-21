@@ -29,6 +29,13 @@ Note that the table controls are contained in the “kitchen sink” toolbar, to
 
 == Changelog ==
 
+= 3.3.1 =
+**Note that this release replaces references of `master` with `trunk` so please plan to update any references you have from `master` to `trunk` to ensure you continue to receive the latest updates on this plugin.**
+
+* **Changed:** Bump WordPress version “tested up to” 5.8 (props [David Chabbi](https://www.linkedin.com/in/david-chabbi-985719b4/), [@jeffpaul](https://github.com/jeffpaul), [@ciprianimike](https://github.com/ciprianimike)).
+* **Changed:**  Updated documentation including new GitHub Actions (props [@jeffpaul](https://github.com/jeffpaul), [@dinhtungdu](https://github.com/dinhtungdu)).
+* **Fixed:** Issues reported by PHPCS WPCS v2.3.0 (props [@ciprianimike](https://github.com/ciprianimike), [@dinhtungdu](https://github.com/dinhtungdu)).
+
 = 3.3 =
 * Significantly update TinyMCE plugin from 4.1.x to 4.7.11
 * Drop support for WordPress 3.x, which means dropping TinyMCE 3.x and 4.0.x
@@ -71,6 +78,9 @@ Note that the table controls are contained in the “kitchen sink” toolbar, to
 * Fixed issue with WebKit browsers (Safari and Chrome) - TinyMCE bug
 
 == Upgrade Notice ==
+
+= 3.3.1 =
+This release replaces references of `master` with `trunk` so please plan to update any references you have from `master` to `trunk` to ensure you continue to receive the latest updates on this plugin.
 
 = 1.5 =
 REQUIRES WordPress 3.3 or higher. Finally links table buttons row to kitchen sink!

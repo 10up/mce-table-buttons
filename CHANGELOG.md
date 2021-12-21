@@ -3,7 +3,16 @@
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
 ## [Unreleased] - TBD
-- Issues reported by PHPCS WPCS v2.3.0 addressed
+
+## [3.3.1] - TBD
+**Note that this release replaces references of `master` with `trunk` so please plan to update any references you have from `master` to `trunk` to ensure you continue to receive the latest updates on this plugin.**
+
+### Changed
+- Bump WordPress version “tested up to” 5.8 (props [David Chabbi](https://www.linkedin.com/in/david-chabbi-985719b4/), [@jeffpaul](https://github.com/jeffpaul), [@ciprianimike](https://github.com/ciprianimike) via [#12](https://github.com/10up/mce-table-buttons/pull/12), [#18](https://github.com/10up/mce-table-buttons/pull/18)).
+- Updated documentation including new GitHub Actions (props [@jeffpaul](https://github.com/jeffpaul), [@dinhtungdu](https://github.com/dinhtungdu) via [#5](https://github.com/10up/mce-table-buttons/pull/5), [#13](https://github.com/10up/mce-table-buttons/pull/13), [#15](https://github.com/10up/mce-table-buttons/pull/15)).
+
+### Fixed
+- Issues reported by PHPCS WPCS v2.3.0 (props [@ciprianimike](https://github.com/ciprianimike), [@dinhtungdu](https://github.com/dinhtungdu) via [#17](https://github.com/10up/mce-table-buttons/pull/17)).
 
 ## [3.3] - 2018-06-15
 ### Changed
@@ -65,6 +74,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 - Initial plugin release :tada:
 
 [Unreleased]: https://github.com/10up/mce-table-buttons/compare/trunk...develop
+[3.3.1]: https://github.com/10up/mce-table-buttons/compare/3.3...3.3.1
 [3.3]: https://github.com/10up/mce-table-buttons/commit/7b1f57e
 [3.2]: https://plugins.trac.wordpress.org/changeset/971857/
 [3.1]: https://plugins.trac.wordpress.org/changeset/924344/
