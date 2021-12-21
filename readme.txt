@@ -32,7 +32,7 @@ Note that the table controls are contained in the “kitchen sink” toolbar, to
 = 3.3.1 =
 **Note that this release replaces references of `master` with `trunk` so please plan to update any references you have from `master` to `trunk` to ensure you continue to receive the latest updates on this plugin.**
 
-* **Changed:** Bump WordPress version “tested up to” 5.8 (props [David Chabbi](https://www.linkedin.com/in/david-chabbi-985719b4/), [@jeffpaul](https://github.com/jeffpaul), [@ciprianimike](https://github.com/ciprianimike)).
+* **Changed:** Bump WordPress version “tested up to” 5.8 (props [David Chabbi](https://profiles.wordpress.org/davidchabbi/), [@jeffpaul](https://github.com/jeffpaul), [@ciprianimike](https://github.com/ciprianimike)).
 * **Changed:**  Updated documentation including new GitHub Actions (props [@jeffpaul](https://github.com/jeffpaul), [@dinhtungdu](https://github.com/dinhtungdu)).
 * **Fixed:** Issues reported by PHPCS WPCS v2.3.0 (props [@ciprianimike](https://github.com/ciprianimike), [@dinhtungdu](https://github.com/dinhtungdu)).
 
