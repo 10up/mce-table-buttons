@@ -4,7 +4,7 @@ Donate link: http://10up.com/plugins-modules/wordpress-mce-table-buttons/
 Tags: tables, table, editor, WYSIWYG, buttons, tinymce
 Requires at least: 4.0
 Tested up to: 5.8
-Stable tag: 3.3
+Stable tag: 3.3.1
 
 Adds table editing controls to the visual content editor (TinyMCE).
 
