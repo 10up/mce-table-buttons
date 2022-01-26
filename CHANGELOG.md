@@ -3,7 +3,11 @@
 All notable changes to this project will be documented in this file, per [the Keep a Changelog standard](http://keepachangelog.com/).
 
 ## [Unreleased] - TBD
-- Issues reported by PHPCS WPCS v2.3.0 addressed
+### Changed
+- Bump WordPress version "tested up to" 5.9 (props [@sudip-10up](https://github.com/sudip-10up) via []().
+
+### Fixed
+- Issues reported by PHPCS WPCS v2.3.0 addressed (props []() via []()).
 
 ## [3.3] - 2018-06-15
 ### Changed
