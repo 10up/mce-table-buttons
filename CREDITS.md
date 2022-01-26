@@ -10,7 +10,7 @@ The following individuals are responsible for curating the list of issues, respo
 
 Thank you to all the people who have already contributed to this repository via bug reports, code, design, ideas, project management, translation, testing, etc.
 
-[Jake Goldman (@jakemgold)](https://github.com/jakemgold), [Helen Hou-Sandi (@helen)](https://github.com/helen), [Adam Silverstein (@adamsilverstein)](https://github.com/adamsilverstein), [Jeffrey Paul (@jeffpaul)](https://github.com/jeffpaul), [David Chabbi (@davidchabbi)](https://profiles.wordpress.org/davidchabbi/).
+[Jake Goldman (@jakemgold)](https://github.com/jakemgold), [Helen Hou-Sandi (@helen)](https://github.com/helen), [Adam Silverstein (@adamsilverstein)](https://github.com/adamsilverstein), [Jeffrey Paul (@jeffpaul)](https://github.com/jeffpaul), [David Chabbi (@davidchabbi)](https://profiles.wordpress.org/davidchabbi/), [Sudip Dadhaniya (@sudip-10up)](https://github.com/sudip-10up).
 
 ## Libraries
 
