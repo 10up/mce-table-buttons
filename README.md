@@ -2,7 +2,7 @@
 
 > Adds table editing controls to the visual content editor (TinyMCE).
 
-[![Support Level](https://img.shields.io/badge/support-stable-blue.svg)](#support-level) [![Linting](https://github.com/10up/mce-table-buttons/actions/workflows/lint.yml/badge.svg)](https://github.com/10up/mce-table-buttons/actions/workflows/lint.yml) [![Release Version](https://img.shields.io/github/release/10up/mce-table-buttons.svg)](https://github.com/10up/mce-table-buttons/releases/latest) ![WordPress tested up to version](https://img.shields.io/badge/WordPress-v5.8%20tested-success.svg) [![GPLv2 License](https://img.shields.io/github/license/10up/mce-table-buttons.svg)](https://github.com/10up/mce-table-buttons/blob/develop/LICENSE.md)
+[![Support Level](https://img.shields.io/badge/support-stable-blue.svg)](#support-level) [![Linting](https://github.com/10up/mce-table-buttons/actions/workflows/lint.yml/badge.svg)](https://github.com/10up/mce-table-buttons/actions/workflows/lint.yml) [![Release Version](https://img.shields.io/github/release/10up/mce-table-buttons.svg)](https://github.com/10up/mce-table-buttons/releases/latest) ![WordPress tested up to version](https://img.shields.io/wordpress/plugin/tested/mce-table-buttons?label=WordPress) [![GPLv2 License](https://img.shields.io/github/license/10up/mce-table-buttons.svg)](https://github.com/10up/mce-table-buttons/blob/develop/LICENSE.md)
 
 ## Overview
 

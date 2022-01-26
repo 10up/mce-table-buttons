@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file, per [the Ke
 **Note that this release replaces references of `master` with `trunk` so please plan to update any references you have from `master` to `trunk` to ensure you continue to receive the latest updates on this plugin.**
 
 ### Changed
-- Bump WordPress version “tested up to” 5.8 (props [David Chabbi](https://profiles.wordpress.org/davidchabbi/), [@jeffpaul](https://github.com/jeffpaul), [@ciprianimike](https://github.com/ciprianimike) via [#12](https://github.com/10up/mce-table-buttons/pull/12), [#18](https://github.com/10up/mce-table-buttons/pull/18)).
+- Bump WordPress version “tested up to” 5.9 (props [David Chabbi](https://profiles.wordpress.org/davidchabbi/), [@jeffpaul](https://github.com/jeffpaul), [@ciprianimike](https://github.com/ciprianimike), [@sudip-10up](https://github.com/sudip-10up) via [#12](https://github.com/10up/mce-table-buttons/pull/12), [#18](https://github.com/10up/mce-table-buttons/pull/18), [#23](https://github.com/10up/mce-table-buttons/pull/23)).
 - Updated documentation including new GitHub Actions (props [@jeffpaul](https://github.com/jeffpaul), [@dinhtungdu](https://github.com/dinhtungdu) via [#5](https://github.com/10up/mce-table-buttons/pull/5), [#13](https://github.com/10up/mce-table-buttons/pull/13), [#15](https://github.com/10up/mce-table-buttons/pull/15)).
 
 ### Fixed
