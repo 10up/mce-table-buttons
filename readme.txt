@@ -1,10 +1,13 @@
 === MCE Table Buttons ===
-Contributors: 10up, jakemgold, helen, thinkoomph
-Donate link: http://10up.com/plugins-modules/wordpress-mce-table-buttons/
-Tags: tables, table, editor, WYSIWYG, buttons, tinymce
+Contributors:      10up, jakemgold, helen, thinkoomph
+Donate link:       http://10up.com/plugins-modules/wordpress-mce-table-buttons/
+Tags:              tables, table, editor, WYSIWYG, buttons, tinymce, classic editor
 Requires at least: 4.0
-Tested up to: 4.9.6
-Stable tag: 3.3
+Tested up to:      5.9
+Stable tag:        3.3.1
+Requires PHP:      
+License:           GPLv2 or later
+License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
 Adds table editing controls to the visual content editor (TinyMCE).
 
@@ -28,6 +31,13 @@ Note that the table controls are contained in the “kitchen sink” toolbar, to
 1. The editor with the added table editing controls.
 
 == Changelog ==
+
+= 3.3.1 =
+**Note that this release replaces references of `master` with `trunk` so please plan to update any references you have from `master` to `trunk` to ensure you continue to receive the latest updates on this plugin.**
+
+* **Changed:** Bump WordPress version “tested up to” 5.8 (props [David Chabbi](https://profiles.wordpress.org/davidchabbi/), [@jeffpaul](https://github.com/jeffpaul), [@ciprianimike](https://github.com/ciprianimike)).
+* **Changed:**  Updated documentation including new GitHub Actions (props [@jeffpaul](https://github.com/jeffpaul), [@dinhtungdu](https://github.com/dinhtungdu)).
+* **Fixed:** Issues reported by PHPCS WPCS v2.3.0 (props [@ciprianimike](https://github.com/ciprianimike), [@dinhtungdu](https://github.com/dinhtungdu)).
 
 = 3.3 =
 * Significantly update TinyMCE plugin from 4.1.x to 4.7.11
@@ -71,6 +81,9 @@ Note that the table controls are contained in the “kitchen sink” toolbar, to
 * Fixed issue with WebKit browsers (Safari and Chrome) - TinyMCE bug
 
 == Upgrade Notice ==
+
+= 3.3.1 =
+This release replaces references of `master` with `trunk` so please plan to update any references you have from `master` to `trunk` to ensure you continue to receive the latest updates on this plugin.
 
 = 1.5 =
 REQUIRES WordPress 3.3 or higher. Finally links table buttons row to kitchen sink!
