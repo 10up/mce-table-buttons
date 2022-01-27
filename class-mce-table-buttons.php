@@ -1,14 +1,20 @@
 <?php
 /**
- * Plugin Name: MCE Table Buttons
- * Plugin URI: http://10up.com/plugins-modules/wordpress-mce-table-buttons/
- * Description: Add <strong>controls for table editing</strong> to the visual content editor with this <strong>light weight</strong> plug-in.
- * Version: 3.3
- * Author: Jake Goldman, 10up, Oomph
- * Author URI: http://10up.com
- * License: GPLv2 or later
+ * MCE Table Buttons
  *
- * @package MCETableButtons
+ * @package           MCETableButtons
+ * 
+ * @wordpress-plugin
+ * Plugin Name:       MCE Table Buttons
+ * Plugin URI:        http://10up.com/plugins-modules/wordpress-mce-table-buttons/
+ * Description:       Add <strong>controls for table editing</strong> to the visual content editor with this <strong>light weight</strong> plug-in.
+ * Version:           3.3.1
+ * Requires at least: 4.0
+ * Requires PHP:      
+ * Author:            Jake Goldman, 10up, Oomph
+ * Author URI:        https://10up.com
+ * License:           GPL v2 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
 
 /**
