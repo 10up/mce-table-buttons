@@ -2,7 +2,7 @@
 
 > Adds table editing controls to the visual content editor (TinyMCE).
 
-[![Support Level](https://img.shields.io/badge/support-stable-blue.svg)](#support-level) [![Linting](https://github.com/10up/mce-table-buttons/actions/workflows/lint.yml/badge.svg)](https://github.com/10up/mce-table-buttons/actions/workflows/lint.yml) [![Release Version](https://img.shields.io/github/release/10up/mce-table-buttons.svg)](https://github.com/10up/mce-table-buttons/releases/latest) ![WordPress tested up to version](https://img.shields.io/wordpress/plugin/tested/mce-table-buttons?label=WordPress) [![GPLv2 License](https://img.shields.io/github/license/10up/mce-table-buttons.svg)](https://github.com/10up/mce-table-buttons/blob/develop/LICENSE.md)
+[![Support Level](https://img.shields.io/badge/support-archived-red.svg)](#support-level) [![Linting](https://github.com/10up/mce-table-buttons/actions/workflows/lint.yml/badge.svg)](https://github.com/10up/mce-table-buttons/actions/workflows/lint.yml) [![Release Version](https://img.shields.io/github/release/10up/mce-table-buttons.svg)](https://github.com/10up/mce-table-buttons/releases/latest) ![WordPress tested up to version](https://img.shields.io/wordpress/plugin/tested/mce-table-buttons?label=WordPress) [![GPLv2 License](https://img.shields.io/github/license/10up/mce-table-buttons.svg)](https://github.com/10up/mce-table-buttons/blob/develop/LICENSE.md)
 
 ## Overview
 
@@ -26,7 +26,7 @@ Note that the table controls are contained in the “kitchen sink” toolbar, to
 
 ## Support Level
 
-**Stable:** 10up is not planning to develop any new features for this, but will still respond to bug reports and security concerns.  We welcome PRs, but any that include new features should be small and easy to integrate and should not include breaking changes. We otherwise intend to keep this tested up to the most recent version of WordPress.
+**Archived:** This project is no longer maintained by 10up. We are no longer responding to Issues or Pull Requests unless they relate to security concerns. We encourage interested developers to fork this project and make it their own!
 
 ## Changelog
 
